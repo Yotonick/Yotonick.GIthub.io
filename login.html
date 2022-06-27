@@ -1,0 +1,147 @@
+﻿<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="assets\images\apple-touch-icon.dc47caceb7c0e46a76fa971856f7a8d0.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets\images\favicon-32x32.0b3924b4bf2fbffe08c393d2fdd56585.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets\images\favicon-16x16.4dcfee548734b379a549f58bb45db5c6.png">
+<meta property="og:title" content="Namalsk RolePlay - Играй в GTA Criminal Russia по сети">
+<link href="css\common.css?3" rel="stylesheet">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Namalsk RolePlay - Играй в GTA Criminal Russia по сети">
+<meta name="keywords" content="crmp, samp, gta, sa, gta sa, multiplayer, namalsk, roleplay, rp, server, project, крмп, самп, гта, са, гта са, мультиплеер, намальск, ролеплей, ролеплэй, рп, сервер, проект">
+<link rel="shortcut icon" href="img\favicon.ico" type="image/x-icon">
+<link rel="alternate" hreflang="ru" href="index.htm">
+<meta name="yandex-verification" content="b14b8b214c673f18">
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-115893046-2" type="da641b111ecd0bc7396bee32-text/javascript"></script>
+<script type="da641b111ecd0bc7396bee32-text/javascript">
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-115893046-2');
+	</script>
+<meta property="og:title" content="Авторизация - Namalsk RolePlay - Играй в GTA Criminal Russia по сети">
+<meta property="og:image" content="https://namalsk-rp.ru/img/vk/login.png">
+<title>Авторизация - Namalsk RolePlay - Играй в GTA Criminal Russia по сети</title>
+<link href="/css/sign-in.css" rel="stylesheet">
+<script async="" src='/cdn-cgi/challenge-platform/h/b/scripts/invisible.js'></script></head>
+<body>
+<main class="app">
+<nav class="navbar app__navbar">
+<div class="container">
+<button class="navbar__button" id="js-navbar-button">menu</button>
+</div>
+</nav>
+<aside class="sidebar app__sidebar" id="js-sidebar">
+<div class="sidebar__content">
+<div class="sidebar__top">
+<a class="logo sidebar__logo" href="index.htm"></a>
+<button class="sidebar__button" id="js-sidebar-button"></button>
+</div>
+<div class="sidebar__main">
+<div class="sidebar-menu sidebar__group">
+<a class="sidebar-item sidebar-menu__item js-sidebar-item" href="index.htm">
+<span class="sidebar-item__icon"><i class="icon icon-home"></i></span><span class="sidebar-item__text">Главная</span>
+</a>
+<a class="sidebar-item sidebar-menu__item js-sidebar-item" href="start.html">
+<span class="sidebar-item__icon"><i class="icon icon-gamepad"></i></span><span class="sidebar-item__text">Как начать игру?</span>
+</a>
+<a class="sidebar-item sidebar-menu__item js-sidebar-item" href="donate.html">
+<span class="sidebar-item__icon"><i class="icon icon-shopping-bag"></i></span><span class="sidebar-item__text">Игровой магазин</span>
+</a>
+<a class="sidebar-item sidebar-menu__item js-sidebar-item" href="ratings.html">
+<span class="sidebar-item__icon"><i class="icon icon-cup"></i></span><span class="sidebar-item__text">Рейтинги</span>
+</a>
+<a class="sidebar-item sidebar-menu__item js-sidebar-item" href="map.html">
+<span class="sidebar-item__icon"><i class="icon icon-map"></i></span><span class="sidebar-item__text">Карта сервера</span>
+</a>
+<a class="sidebar-item sidebar-menu__item js-sidebar-item" href="https://forum.namalsk-rp.ru">
+<span class="sidebar-item__icon"><i class="icon icon-message"></i></span><span class="sidebar-item__text">Форум</span>
+</a>
+<a class="sidebar-item sidebar-menu__item js-sidebar-item sidebar-item--active" href="login.html">
+<span class="sidebar-item__icon"><i class="icon icon-user"></i></span><span class="sidebar-item__text">Личный кабинет</span>
+</a>
+</div>
+<div class="separator separator--dark sidebar__separator"></div>
+<div class="sidebar-menu sidebar__group">
+<a class="sidebar-item sidebar-menu__item" href="https://forum.namalsk-rp.ru/threads/80794/">
+<span class="sidebar-item__icon"><i class="icon icon-document"></i></span><span class="sidebar-item__text">Правила проекта</span>
+</a>
+<a class="sidebar-item sidebar-menu__item" href="https://forum.namalsk-rp.ru/forums/8/">
+<span class="sidebar-item__icon"><i class="icon icon-plane"></i></span><span class="sidebar-item__text">Обратная связь</span>
+</a>
+</div>
+</div>
+</div>
+<div class="sidebar__bottom">
+<div class="copyright">
+<p class="copyright__project">Namalsk RolePlay &copy; 2021</p>
+<p class="copyright__author">Developed by&nbsp;<a class="copyright__link" target="_blank" rel="noreferrer noopener" href="https://github.com/Dessader">DESSADER</a></p>
+</div>
+</div>
+</aside>
+<div class="content app__content" id="js-app-content">
+<section class="page form-page">
+<div class="page-content">
+<div class="container">
+<form class="form" id='login_form' method='post'>
+<h3 class="headline headline--bold form__headline">Войти в кабинет</h3>
+<div class="form-group" style="display: none" id="error-group">
+<div class="form-error">
+<div class="form-error__icon"><i class="icon icon-warning"></i></div>
+<div class="form-error__content">
+<p class="text text--primary" id="error-text"></p>
+</div>
+</div>
+</div>
+<div class="form-group">
+<div class="select select select--with-icon" id="selectServer" data-value="1">
+<div class="select__control">
+<div class="select__icon"><i class="icon icon-server"></i></div>
+<div class="select__value"></div>
+<div class="select__caret"><i class="icon icon-chevron-down"></i></div>
+</div>
+<div class="select__menu">
+<div class="select__item" data-value="1">Namalsk RP - Odin</div>
+<div class="select__item" data-value="2">Namalsk RP - Poseidon</div>
+</div>
+</div>
+</div>
+<div class="form-group">
+<div class="input input--with-icon">
+<span class="input__icon"><i class="icon icon-user"></i></span>
+<input class="input__field" placeholder="Введите ник" name='login' required="">
+</div>
+</div>
+<div class="form-group">
+ <div class="input input--with-icon">
+<span class="input__icon"><i class="icon icon-lock"></i></span>
+<input class="input__field" type="password" placeholder="Введите пароль" name='password' required="">
+</div>
+</div>
+<div class="form-group" id="google-code">
+<div class="input input--with-icon">
+<span class="input__icon"><i class="icon icon-lock"></i></span>
+<input id="google-code-input" class="input__field" placeholder="G-Auth Code (если есть)" name='google'>
+</div>
+</div>
+<div class="form-group">
+<script src='https://www.google.com/recaptcha/api.js' type="da641b111ecd0bc7396bee32-text/javascript"></script>
+<div class='g-recaptcha' data-sitekey='6LeJns0UAAAAAKTbWySreYv7QnU8PRcF2biHOk67' name='g-recaptcha-response'></div>
+</div>
+<div class="form-group form-group--flex">
+<button class="button button--primary button--size-m mr-20" id="signInButton"><span class="button__text">Войти</span></button>
+
+</div>
+</form>
+</div>
+</div>
+</section>
+</div>
+</main>
+<div class="modals"></div>
+<script src="js\common.js?1" type="da641b111ecd0bc7396bee32-text/javascript"></script> <script src="js\sign-in.js?7" type="da641b111ecd0bc7396bee32-text/javascript"></script>
+<script src="cdn-cgi\scripts\7d0fa10a\cloudflare-static\rocket-loader.min.js" data-cf-settings="da641b111ecd0bc7396bee32-|49" defer=""></script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'6b45b0c879815b62',m:'H4TYDgRRAVeCCmwtv.7FUbpBvg7HeHHGZB0gqB5ytIc-1637956696-0-AZNX1mGpV9sNEOsbe0px68xul9TQPWbgQ1G51GbLcyhCsTnTshF5tmncn7hFFNyVkoaSvGK0IXmIM5enEDCzhHuURtQGV5aF8LwuhlGUWCp+E1fXLOy2e3SqEDvOLDCTLg==',s:[0x1abc423611,0x6454896870],u:'/cdn-cgi/challenge-platform/h/b'}})();</script><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v64f9daad31f64f81be21cbef6184a5e31634941392597" integrity="sha512-gV/bogrUTVP2N3IzTDKzgP0Js1gg4fbwtYB6ftgLbKQu/V8yH2+lrKCfKHelh4SO3DPzKj4/glTO+tNJGDnb0A==" data-cf-beacon='{"rayId":"6b45b0c879815b62","version":"2021.11.0","r":1,"token":"338239e1b39e4654b5f28be354fc8a0b","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
